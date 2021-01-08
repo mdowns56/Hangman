@@ -1,0 +1,22 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="result">
+    <div class="ending"></div>
+    <div class="record"></div>
+</div>
+
+<div class="hangman">
+    <div class="picture"></div>
+    <div class="guesses"></div>
+</div>
+<div class="output"></div>
+<div class="input">
+    @for (char c = 'a'; c <= 'z'; c++)
+    {
+        <input type="button" class="guess" value="@c" />
+    }
+
+    <input type="button" class="restart" value="Play again" />
+</div>

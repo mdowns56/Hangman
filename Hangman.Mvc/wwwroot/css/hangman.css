@@ -1,0 +1,19 @@
+﻿.input {display:flex; flex-wrap:wrap; justify-content:center;}
+
+.guess {width:5.5%; margin:1%;}
+.guess.wrong {background-color:#FF3333; color:#FFFFFF;}
+.guess.right {background-color:#33FF33; color:#FFFFFF;}
+.restart {display:none; margin:5%;}
+
+.output {display:flex; justify-content:center; font-size:1.5em; padding:5%;}
+.output span {width:5%; text-align:center;}
+
+.picture {display:flex; justify-content:center; align-content:center; font-size:2em;}
+
+.result {display:flex; justify-content:space-between; font-size:2em;}
+.ending.win {color:#00FF00;}
+.ending.loss {color: #FF0000;}
+
+@media only screen and (max-width: 600px){
+    .guess { width:23%; margin:3%;}
+}
